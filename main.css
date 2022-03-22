@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-light: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    --font-lexend: 'Lexend Deca', sans-serif;
+    --font-lexend-weight: 400;
+    --font-lexend-size: 15px;
+
+    --font-big-shoulders: 'Big Shoulders Display', cursive;
+    --font-big-shoulders-weight: 700;
+    --font-big-shoulders-size: 36px;
+}
+
+body{
+    margin: 0;
+}
+
+.title{
+    font-family: var(--font-big-shoulders);
+    font-weight: var(--font-lexend-weight);
+    font-size: var(--font-big-shoulders-size);
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+}
+
+.subtitle{
+    font-family: var(--font-lexend);
+    font-weight: var(--font-lexend-weight);
+    font-size: var(--font-lexend-size);
+    color: var(--transparent-light);
+    line-height: 3.5vh;
+}
+
+.container{
+    margin: auto;
+    margin-top: 15vh;
+
+    max-width: 75vw;
+    height: auto;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    padding: 8vh 7vw;
+    padding-left: 3vw;
+}
+.card .footer{
+    padding-top: 7.5vh;
+}
+
+.card.card-orange{
+    background-color: var(--bright-orange);
+}
+.card.card-cyan{
+    background-color: var(--dark-cyan);
+}
+.card.card-dark-cyan{
+    background-color: var(--very-dark-cyan);
+}
+
+.btn{
+    font-size: var(--font-lexend-size);
+    font-family: var(--font-lexend);
+
+    text-decoration: none;
+
+    padding: 1.75vh 2vw;
+    
+    background-color: var(--very-light-gray);
+    border-radius: 5vh;
+}
+
+.btn.btn-orange{
+    color: var(--bright-orange);
+}
+.btn.btn-cyan{
+    color: var(--dark-cyan);
+}
+.btn.btn-dark-cyan{
+    color: var(--very-dark-cyan);
+}
+
+.attribution{
+    margin-top: 12.5vh;
+}
+
+@media only screen and (max-width: 375px) {
+    
+}
